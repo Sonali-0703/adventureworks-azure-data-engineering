@@ -1,0 +1,25 @@
+{
+  "name": "DynamicGitToRaw",
+  "type": "Microsoft.DataFactory/factories/pipelines",
+  "properties": {
+    "description": "Sanitized portfolio representation of the documented Git-to-Bronze dynamic pipeline.",
+    "activities": [
+      {
+        "name": "LookupGit",
+        "type": "Lookup",
+        "description": "Retrieves the list of source items/files to process."
+      },
+      {
+        "name": "ForEachGit",
+        "type": "ForEach",
+        "description": "Loops through the items returned by LookupGit."
+      },
+      {
+        "name": "DynamicCopy",
+        "type": "Copy",
+        "description": "Copies each current item to the Bronze destination using parameterized datasets."
+      }
+    ],
+    "_portfolio_note": "Sanitized documentation template; not intended as a direct ARM deployment file."
+  }
+}
