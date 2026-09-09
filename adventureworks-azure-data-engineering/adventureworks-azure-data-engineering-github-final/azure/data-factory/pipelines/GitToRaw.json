@@ -1,0 +1,15 @@
+{
+  "name": "GitToRaw",
+  "type": "Microsoft.DataFactory/factories/pipelines",
+  "properties": {
+    "description": "Sanitized portfolio representation of Git-to-Bronze ingestion.",
+    "activities": [
+      {
+        "name": "CopyGitToRaw",
+        "type": "Copy",
+        "description": "Represents the source-to-Bronze copy operation. Configure linked services in Azure Data Factory."
+      }
+    ],
+    "_portfolio_note": "Sanitized documentation template; not intended as a direct ARM deployment file."
+  }
+}
